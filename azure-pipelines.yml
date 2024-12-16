@@ -17,7 +17,7 @@ variables:
   vmImageName: 'ubuntu-latest'
 
   # Working Directory
-  workingDirectory: 'plouf'
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
 
 stages:
 - stage: Build
