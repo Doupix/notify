@@ -6,7 +6,7 @@ import azure.functions as func
 # Définir l'application Azure Function
 app = func.FunctionApp()
 
-@app.function_name(name="BlobToQueueFunction")
+@app.function_name(name="Plouf")
 @app.blob_trigger(arg_name="blob", path="images/{name}", connection="AzureWebJobsStorage")
 def BlobToQueueFunction(blob: func.InputStream):
     # Lecture du nom et de la taille du fichier
